@@ -3,70 +3,20 @@ import logo from '../assets/logo_techminds.png';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
-  const { t, language } = useLanguage();
-
-  const labels = {
-    pt: {
-      description: 'Transformando estudantes em profissionais atraves da pratica e inovacao tecnologica.',
-      company: 'Empresa',
-      resources: 'Recursos',
-      contact: 'Contato',
-      team: 'Equipe',
-      careers: 'Carreiras',
-      blog: 'Blog',
-      docs: 'Documentacao',
-      tutorials: 'Tutoriais',
-      faq: 'FAQ',
-      rights: 'Todos os direitos reservados.',
-      privacy: 'Privacidade',
-      terms: 'Termos'
-    },
-    en: {
-      description: 'Transforming students into professionals through practice and technological innovation.',
-      company: 'Company',
-      resources: 'Resources',
-      contact: 'Contact',
-      team: 'Team',
-      careers: 'Careers',
-      blog: 'Blog',
-      docs: 'Documentation',
-      tutorials: 'Tutorials',
-      faq: 'FAQ',
-      rights: 'All rights reserved.',
-      privacy: 'Privacy',
-      terms: 'Terms'
-    },
-    es: {
-      description: 'Transformando estudiantes en profesionales a través de la práctica e innovación tecnológica.',
-      company: 'Empresa',
-      resources: 'Recursos',
-      contact: 'Contacto',
-      team: 'Equipo',
-      careers: 'Carreras',
-      blog: 'Blog',
-      docs: 'Documentación',
-      tutorials: 'Tutoriales',
-      faq: 'Preguntas Frecuentes',
-      rights: 'Todos los derechos reservados.',
-      privacy: 'Privacidad',
-      terms: 'Términos'
-    }
-  };
-
-  const text = labels[language as keyof typeof labels];
+  const { t } = useLanguage();
 
   const footerLinks = {
     empresa: [
       { label: t('header.about'), href: '#about' },
       { label: t('header.projects'), href: '#projects' },
-      { label: text.team, href: '#' },
-      { label: text.careers, href: '#' }
+      { label: t('footer.team'), href: '#' },
+      { label: t('footer.careers'), href: '#' }
     ],
     recursos: [
-      { label: text.blog, href: '#' },
-      { label: text.docs, href: '#' },
-      { label: text.tutorials, href: '#' },
-      { label: text.faq, href: '#' }
+      { label: t('footer.blog'), href: '#' },
+      { label: t('footer.docs'), href: '#' },
+      { label: t('footer.tutorials'), href: '#' },
+      { label: t('footer.faq'), href: '#' }
     ]
   };
 
@@ -108,17 +58,15 @@ export default function Footer() {
     <footer id="contact" className="border-t border-white/10 bg-slate-900/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
 
-        {/* Main Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
 
-          {/* Logo & Description */}
           <div className="sm:col-span-2 lg:col-span-1">
             <a href="#home" className="inline-flex items-center gap-3 mb-4">
               <img src={logo} alt="TechMinds Logo" className="h-10 w-auto" />
               <span className="font-bold text-lg text-white">TechMinds</span>
             </a>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
-              {text.description}
+              {t('footer.description')}
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
@@ -134,9 +82,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Empresa */}
           <div>
-            <h3 className="font-semibold text-white mb-4">{text.company}</h3>
+            <h3 className="font-semibold text-white mb-4">{t('footer.company')}</h3>
             <ul className="space-y-3">
               {footerLinks.empresa.map((link, index) => (
                 <li key={index}>
@@ -148,9 +95,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Recursos */}
           <div>
-            <h3 className="font-semibold text-white mb-4">{text.resources}</h3>
+            <h3 className="font-semibold text-white mb-4">{t('footer.resources')}</h3>
             <ul className="space-y-3">
               {footerLinks.recursos.map((link, index) => (
                 <li key={index}>
@@ -162,9 +108,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
-            <h3 className="font-semibold text-white mb-4">{text.contact}</h3>
+            <h3 className="font-semibold text-white mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-4">
               <li>
                 <a href="mailto:contato@techminds.com" className="flex items-center gap-3 text-gray-400 text-sm hover:text-cyan-400 transition-colors">
@@ -192,18 +137,17 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} TechMinds. {text.rights}
+              &copy; {new Date().getFullYear()} TechMinds. {t('footer.rights')}
             </p>
             <div className="flex items-center gap-6">
               <a href="#" className="text-gray-500 text-sm hover:text-gray-400 transition-colors">
-                {text.privacy}
+                {t('footer.privacy')}
               </a>
               <a href="#" className="text-gray-500 text-sm hover:text-gray-400 transition-colors">
-                {text.terms}
+                {t('footer.terms')}
               </a>
             </div>
           </div>

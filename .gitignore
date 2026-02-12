@@ -121,4 +121,3 @@ vite.config.ts.timestamp-*
 
 # Cache
 .npm-cache/
-.claude/

@@ -1,18 +1,17 @@
 # TechMinds Portfolio
 
-Site institucional e portfólio da **TechMinds** — desenvolvimento Full Stack, design premium e mentoria tech.
+Landing page institucional da **TechMinds** - desenvolvimento Full Stack, design premium e mentoria tech.
 
 ## Sobre o Projeto
 
-Landing page moderna e responsiva que apresenta os serviços, projetos e programas de mentoria da TechMinds. O site conta com efeitos visuais 3D, suporte a múltiplos idiomas e um design focado em conversão.
+Landing page moderna e responsiva que apresenta os servicos, projetos e programas de mentoria da TechMinds. O site conta com efeitos visuais 3D, suporte a multiplos idiomas e um design focado em conversao.
 
 ### Principais Funcionalidades
 
-- **Multi-idioma** — Português, Inglês e Espanhol
-- **Efeitos 3D** — Partículas e visualizações interativas com Three.js
-- **Design Responsivo** — Adaptado para desktop, tablet e mobile
-- **Seções completas** — Hero, Sobre, Estatísticas, Projetos, Mentoria, Comunidade e Contato
-- **Componentes acessíveis** — Baseado em Radix UI / shadcn/ui
+- **Multi-idioma** - Portugues, Ingles e Espanhol
+- **Efeitos 3D** - Particulas e rede neural interativa com Three.js
+- **Design Responsivo** - Adaptado para desktop, tablet e mobile
+- **Secoes completas** - Hero, Stats, About, Mentoria, Projetos, Deadline, Comunidade e Contato
 
 ## Tech Stack
 
@@ -20,14 +19,11 @@ Landing page moderna e responsiva que apresenta os serviços, projetos e program
 | ------------ | ----------------------------------- |
 | Framework    | React 18 + TypeScript               |
 | Build        | Vite 6 + SWC                        |
-| Estilização  | Tailwind CSS 4                       |
-| Componentes  | shadcn/ui + Radix UI                |
+| Estilizacao  | Tailwind CSS 4                       |
 | 3D / Visual  | Three.js + React Three Fiber        |
-| Partículas   | tsparticles                          |
-| Formulários  | React Hook Form                      |
-| Gráficos     | Recharts                             |
+| Icones       | Lucide React                         |
 
-## Pré-requisitos
+## Pre-requisitos
 
 - [Node.js](https://nodejs.org/) >= 18
 - npm (incluso com Node.js)
@@ -35,57 +31,57 @@ Landing page moderna e responsiva que apresenta os serviços, projetos e program
 ## Como Rodar
 
 ```bash
-# 1. Clone o repositório
+# 1. Clone o repositorio
 git clone https://github.com/eziocdl/tech-minds-landing.git
 cd tech-minds-landing
 
-# 2. Instale as dependências
+# 2. Instale as dependencias
 npm install
 
 # 3. Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-O app estará disponível em **http://localhost:4400**
+O app estara disponivel em **http://localhost:3000**
 
-## Build de Produção
+## Build de Producao
 
 ```bash
 npm run build
 ```
 
-Os arquivos compilados serão gerados na pasta `build/`.
+Os arquivos compilados serao gerados na pasta `build/`.
 
 ## Estrutura do Projeto
 
 ```
 src/
-├── components/          # Componentes React
-│   ├── ui/              # Biblioteca de componentes (shadcn/ui)
-│   ├── Header.tsx       # Navegação principal
-│   ├── Hero3D.tsx       # Hero com efeitos 3D
-│   ├── AboutSection.tsx # Seção "Sobre"
-│   ├── StatsSection.tsx # Estatísticas
-│   ├── ProjectsSection.tsx
-│   ├── LearningSection.tsx
-│   ├── CommunitiesSection.tsx
-│   ├── DeadlineSection.tsx
-│   └── Footer.tsx
-├── contexts/            # React Context (idioma)
-├── translations/        # Strings de tradução (PT/EN/ES)
-├── assets/              # Imagens, ícones e favicon
-├── styles/              # Estilos globais
-├── App.tsx              # Componente raiz
-└── main.tsx             # Entry point
+├── components/            # Componentes React
+│   ├── Header.tsx         # Navegacao principal com menu mobile
+│   ├── Hero3D.tsx         # Hero section com CTAs
+│   ├── BrainParticles3D.tsx # Background 3D com rede de particulas
+│   ├── StatsSection.tsx   # Metricas e resultados
+│   ├── AboutSection.tsx   # Secao "Sobre"
+│   ├── LearningSection.tsx # Mentoria
+│   ├── ProjectsSection.tsx # Projetos em destaque
+│   ├── DeadlineSection.tsx # Gestao de tempo
+│   ├── CommunitiesSection.tsx # GitHub, WhatsApp, Discord
+│   └── Footer.tsx         # Rodape com contato e links
+├── contexts/              # React Context (idioma)
+├── translations/          # Strings de traducao (PT/EN/ES)
+├── assets/                # Imagens, icones e favicon
+├── styles/                # Estilos globais
+├── App.tsx                # Componente raiz
+└── main.tsx               # Entry point
 ```
 
-## Scripts Disponíveis
+## Scripts Disponiveis
 
-| Comando         | Descrição                          |
-| --------------- | ---------------------------------- |
+| Comando         | Descricao                            |
+| --------------- | ------------------------------------ |
 | `npm run dev`   | Inicia o servidor de desenvolvimento |
-| `npm run build` | Gera o build de produção            |
+| `npm run build` | Gera o build de producao             |
 
-## Licença
+## Licenca
 
 Projeto privado da TechMinds Group.
