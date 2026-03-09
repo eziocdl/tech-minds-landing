@@ -5,8 +5,8 @@ export default function Hero3D() {
   const { t } = useLanguage();
 
   return (
-    <section id="home" className="relative min-h-[80vh] flex items-center justify-center pt-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+    <section id="home" className="relative min-h-[80vh] flex items-center justify-center pt-28 sm:pt-32">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-28">
         <div className="max-w-4xl mx-auto text-center">
 
           {/* Badge */}
@@ -34,23 +34,17 @@ export default function Hero3D() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 sm:mb-16">
             <a
               href="#contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-full hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 hover:scale-105 shadow-lg shadow-cyan-500/25"
+              className="btn-active-feedback w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-full hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 hover:scale-105 shadow-lg shadow-cyan-500/25"
             >
               {t('hero.cta_primary')}
               <ArrowRight className="w-5 h-5" />
             </a>
             <a
               href="#projects"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+              className="btn-active-feedback w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
               style={{
                 background: 'linear-gradient(to right, #a855f7, #10b981)',
                 boxShadow: '0 10px 40px -10px rgba(168, 85, 247, 0.4)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.opacity = '0.85';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.opacity = '1';
               }}
             >
               {t('hero.cta_secondary')}

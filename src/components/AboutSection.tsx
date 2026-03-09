@@ -5,7 +5,7 @@ export default function AboutSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="mt-24 pt-16 pb-16 sm:mt-32 sm:pt-20 sm:pb-20 lg:mt-40 lg:pt-24 lg:pb-24 relative overflow-hidden">
+    <section id="about" className="py-24 sm:py-28 lg:py-32 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Top Section: Intro */}
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -13,11 +13,11 @@ export default function AboutSection() {
             {t('about.badge')}
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             {t('about.title')}
           </h2>
 
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
             {t('about.subtitle')}
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function AboutSection() {
         {/* Bottom Section: Values Cards */}
         <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
           {/* Innovation Card */}
-          <div className="p-6 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/[0.15] shadow-lg shadow-black/20 hover:bg-white/[0.12] hover:border-white/[0.25] hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group flex items-center gap-4">
+          <div className="p-6 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/[0.15] shadow-lg shadow-black/20 hover:bg-white/[0.12] hover:border-cyan-500/30 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(6,182,212,0.15)] transition-all duration-300 group flex items-center gap-4">
             <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
               <Zap className="w-6 h-6 text-white" />
             </div>
@@ -36,7 +36,7 @@ export default function AboutSection() {
           </div>
 
           {/* Speed Card */}
-          <div className="p-6 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/[0.15] shadow-lg shadow-black/20 hover:bg-white/[0.12] hover:border-white/[0.25] hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group flex items-center gap-4">
+          <div className="p-6 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/[0.15] shadow-lg shadow-black/20 hover:bg-white/[0.12] hover:border-cyan-500/30 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(6,182,212,0.15)] transition-all duration-300 group flex items-center gap-4">
             <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
               <Clock className="w-6 h-6 text-white" />
             </div>
@@ -47,7 +47,7 @@ export default function AboutSection() {
           </div>
 
           {/* Quality Card */}
-          <div className="p-6 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/[0.15] shadow-lg shadow-black/20 hover:bg-white/[0.12] hover:border-white/[0.25] hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group flex items-center gap-4">
+          <div className="p-6 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/[0.15] shadow-lg shadow-black/20 hover:bg-white/[0.12] hover:border-cyan-500/30 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(6,182,212,0.15)] transition-all duration-300 group flex items-center gap-4">
             <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
               <Shield className="w-6 h-6 text-white" />
             </div>

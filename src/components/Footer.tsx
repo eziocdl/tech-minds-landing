@@ -139,14 +139,14 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-400 text-sm">
               &copy; {new Date().getFullYear()} TechMinds. {t('footer.rights')}
             </p>
             <div className="flex items-center gap-6">
-              <a href="#" className="text-gray-500 text-sm hover:text-gray-400 transition-colors">
+              <a href="#" className="text-gray-400 text-sm hover:text-cyan-400 transition-colors">
                 {t('footer.privacy')}
               </a>
-              <a href="#" className="text-gray-500 text-sm hover:text-gray-400 transition-colors">
+              <a href="#" className="text-gray-400 text-sm hover:text-cyan-400 transition-colors">
                 {t('footer.terms')}
               </a>
             </div>

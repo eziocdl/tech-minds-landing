@@ -29,14 +29,14 @@ export default function CommunitiesSection() {
   ];
 
   return (
-    <section id="communities" className="relative z-10 py-16 sm:py-20 lg:py-24">
+    <section id="communities" className="relative z-10 py-24 sm:py-28 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             {t('communities.title')}
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto">
             {t('communities.subtitle')}
           </p>
         </div>
@@ -45,16 +45,16 @@ export default function CommunitiesSection() {
           {communities.map((community, index) => (
             <div
               key={index}
-              className={`p-6 sm:p-8 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/[0.15] shadow-lg shadow-black/20 text-center hover:bg-white/[0.12] hover:border-white/[0.25] hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group ${community.hoverColor}`}
+              className={`p-6 sm:p-8 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/[0.15] shadow-lg shadow-black/20 text-center hover:bg-white/[0.12] hover:border-cyan-500/30 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(6,182,212,0.15)] transition-all duration-300 group ${community.hoverColor}`}
             >
               <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${community.color} mb-5 group-hover:scale-110 transition-transform`}>
                 <community.icon className="w-6 h-6 text-white" />
               </div>
 
               <h3 className="text-xl font-semibold text-white mb-3">{community.name}</h3>
-              <p className="text-gray-400 mb-6 leading-relaxed">{community.description}</p>
+              <p className="text-gray-300 mb-6 leading-relaxed">{community.description}</p>
 
-              <button className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r ${community.color} text-white font-medium hover:opacity-90 transition-opacity`}>
+              <button className={`btn-active-feedback w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r ${community.color} text-white font-medium hover:scale-105 hover:shadow-lg transition-all duration-300`}>
                 {t('community.cta')}
                 <ExternalLink className="w-4 h-4" />
               </button>

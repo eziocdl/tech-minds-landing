@@ -6,7 +6,7 @@ export default function DeadlineSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24">
+    <section className="py-24 sm:py-28 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -16,7 +16,7 @@ export default function DeadlineSection() {
               {t('deadline_section.badge')}
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               {t('deadline.title_prefix')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
                 {t('deadline.title_highlight')}

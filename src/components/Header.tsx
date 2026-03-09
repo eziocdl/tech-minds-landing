@@ -50,7 +50,7 @@ export default function Header() {
         backdropFilter: 'blur(16px)',
         borderBottom: '1px solid rgba(100, 116, 139, 0.2)' // Subtle slate-500 border
       }}>
-        <div style={{ maxWidth: '1920px', margin: '0 auto', padding: '0 40px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{ height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 
             {/* Logo */}
@@ -66,7 +66,7 @@ export default function Header() {
                   <a
                     key={link.href}
                     href={link.href}
-                    className="text-gray-300 hover:text-cyan-400 transition-colors duration-200"
+                    className="nav-link-animated text-gray-300 hover:text-cyan-400 transition-colors duration-300"
                     style={{ padding: '8px 16px', fontSize: '14px', fontWeight: 500, borderRadius: '8px', textDecoration: 'none' }}
                   >
                     {link.label}
@@ -122,8 +122,8 @@ export default function Header() {
                 </div>
 
                 <button
-                  className="bg-white/10 text-white hover:bg-white/20 transition-all duration-300"
-                  style={{ marginLeft: '8px', padding: '8px 20px', borderRadius: '50px', fontWeight: 600, fontSize: '14px', border: '1px solid rgba(255,255,255,0.1)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
+                  className="btn-active-feedback bg-white/10 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300"
+                  style={{ marginLeft: '8px', padding: '8px 24px', borderRadius: '50px', fontWeight: 600, fontSize: '14px', border: '1px solid rgba(255,255,255,0.1)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
                 >
                   <User size={16} />
                   {t('header.login')}
@@ -188,8 +188,8 @@ export default function Header() {
             ))}
             <div style={{ height: '1px', background: 'rgba(255,255,255,0.1)', margin: '24px 0' }} />
             <button
-              className="bg-cyan-500/10 text-cyan-400 w-full"
-              style={{ padding: '12px', borderRadius: '12px', fontWeight: 600, border: '1px solid rgba(6,182,212,0.2)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+              className="btn-active-feedback bg-cyan-500/10 text-cyan-400 w-full hover:bg-cyan-500/20 transition-all duration-300"
+              style={{ padding: '14px', borderRadius: '12px', fontWeight: 600, border: '1px solid rgba(6,182,212,0.2)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
             >
               <User size={18} />
               {t('header.login')}

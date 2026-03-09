@@ -9,6 +9,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Container centralizado global */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Underline animado para links do menu */
+.nav-link-animated {
+  position: relative;
+}
+
+.nav-link-animated::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #22d3ee, #3b82f6);
+  transition: width 0.3s ease, left 0.3s ease;
+  border-radius: 1px;
+}
+
+.nav-link-animated:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Feedback de clique (ripple) nos botões */
+.btn-active-feedback {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-active-feedback:active {
+  transform: scale(0.95) !important;
+  filter: brightness(0.9);
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

@@ -42,7 +42,7 @@ function NetworkParticles({ count = 300 }) {
                 size={0.05}
                 color="#22d3ee"
                 transparent
-                opacity={0.25}
+                opacity={0.12}
                 depthWrite={false}
                 sizeAttenuation={true}
             />
@@ -94,7 +94,7 @@ function NetworkConnections({ count = 300 }) {
                 attach="material"
                 color="#0891b2"
                 transparent
-                opacity={0.08}
+                opacity={0.05}
             />
         </lineSegments>
     );
